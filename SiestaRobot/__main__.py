@@ -374,7 +374,7 @@ def help_button(update, context):
 def siesta_about_callback(update, context):
     query = update.callback_query
     chat = update.effective_chat
-    if query.data == "siesta_":
+    if query.data == "killua_":
         query.message.edit_text(
             text=gs(chat.id, "pm_about_text"),
             parse_mode=ParseMode.MARKDOWN,
@@ -767,7 +767,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 2081159749:
+        if OWNER_ID != 945137470:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
