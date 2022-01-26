@@ -1,7 +1,7 @@
 # Language name in their native
 language: "Indonesia 🇮🇩"
 # name of people(s) who worked on this translation
-authors: "@saint_foire"
+authors: "@tzypis"
 
 # languages
 curr_chat_lang: "Hai. Bahasa Anda saat ini adalah {}, pilih yang Anda inginkan dari tombol di bawah :)"
@@ -71,9 +71,9 @@ group_help_modules_text: "Hubungi saya di PM untuk mendapatkan bantuan *{}*"
 # Group Help Button
 group_help_button: "Bantuan"
 # PM Settings
-pm_settings_personal_text: "Ini adalah pengaturan Anda saat ini : "
+pm_settings_personal_text: "Ini adalah pengaturan Anda saat ini: "
 pm_settings_group_text: "Modul mana yang ingin Anda periksa setelan {} ?"
-pm_settings_groups_text: "*{}* memiliki setelan berikut untuk modul *{}* :\n\n"
+pm_settings_groups_text: "*{}* memiliki setelan berikut untuk modul *{}*:\n\n"
 pm_settings_groupss_text: |
     Hai, yang di sana! Ada beberapa setelan untuk {} - lanjutkan dan pilih yang Anda minati.
 # Group Settings Text
