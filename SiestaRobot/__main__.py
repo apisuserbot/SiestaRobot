@@ -371,7 +371,7 @@ def help_button(update, context):
         pass
 
 
-def siesta_about_callback(update, context):
+def killua_about_callback(update, context):
     query = update.callback_query
     chat = update.effective_chat
     if query.data == "killua_":
@@ -840,7 +840,7 @@ def main():
     )
 
     about_callback_handler = CallbackQueryHandler(
-        siesta_about_callback, pattern=r"siesta_", run_async=True
+        killua_about_callback, pattern=r"killua_", run_async=True
     )
 
     source_callback_handler = CallbackQueryHandler(
