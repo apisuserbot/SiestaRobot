@@ -463,7 +463,7 @@ def siesta_about_callback(update, context):
                         InlineKeyboardButton(text=gs(chat.id, "updates_channel_link_button"), url="https://t.me/JasaJokiIG"),
                     ],
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_"),
+                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="killua_"),
                     ]
                 ]
             ),
