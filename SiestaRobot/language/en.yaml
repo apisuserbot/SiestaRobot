@@ -46,7 +46,7 @@ pm_about_admin_text: |
   You can ban members, Kick members, Promote someone as admin through commands of bot.
 
   *Greetings*
-  Lets set a welcome message to welcome new users coming to your group.
+  Lets set a welcome message to welcome new users coming to your group
   Send `/setwelcome [message]` to set a welcome message!
 pm_about_notes_text: |
   *✺ Setting up notes ✺*
@@ -66,7 +66,7 @@ pm_help_text: |
 pm_help_module_text: "Here is the help for the *{}* module :\n\n"
 
 # Group Help Text
-group_help_text: "Contact me in PM to get the list of possible commands."
+group_help_text: "Contact me in PM to get the list of possible commands"
 group_help_modules_text: "Contact me in PM to get help of *{}*"
 # Group Help Button
 group_help_button: "Help"
@@ -75,9 +75,9 @@ pm_settings_personal_text: "These are your current settings: "
 pm_settings_group_text: "Which module would you like to check {}'s settings for?"
 pm_settings_groups_text: "*{}* has the following settings for the *{}* module:\n\n"
 pm_settings_groupss_text: |
-    Hi there! There are quite a few settings for {} - go ahead and pick what you're interested in.
+    Hi there! There are quite a few settings for {} - go ahead and pick what you're interested in
 # Group Settings Text
-group_settings_text: "Click here to get this chat's settings, as well as yours."
+group_settings_text: "Click here to get this chat's settings, as well as yours"
 # Group Settings Button
 group_settings_button: "Settings"
 
@@ -89,7 +89,7 @@ notes_button: "Notes"
 source_button: "Source Code"
 help_button: "Get Help"
 back_button: "Go back"
-about_button: "About Siesta Robot"
+about_button: "About Killua Robot"
 inline_button: "Try inline!​​"
 
 # MODULES
