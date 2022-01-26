@@ -66,7 +66,7 @@ pm_help_text: |
 pm_help_module_text: "Berikut adalah bantuan untuk modul *{}* :\n\n"
 
 # Group Help Text
-group_help_text: "Hubungi saya di PM untuk mendapatkan daftar kemungkinan perintah."
+group_help_text: "Hubungi saya di PM untuk mendapatkan daftar kemungkinan perintah"
 group_help_modules_text: "Hubungi saya di PM untuk mendapatkan bantuan *{}*"
 # Group Help Button
 group_help_button: "Bantuan"
@@ -75,9 +75,9 @@ pm_settings_personal_text: "Ini adalah pengaturan Anda saat ini: "
 pm_settings_group_text: "Modul mana yang ingin Anda periksa setelan {} ?"
 pm_settings_groups_text: "*{}* memiliki setelan berikut untuk modul *{}*:\n\n"
 pm_settings_groupss_text: |
-    Hai, yang di sana! Ada beberapa setelan untuk {} - lanjutkan dan pilih yang Anda minati.
+    Hai, yang di sana! Ada beberapa setelan untuk {} - lanjutkan dan pilih yang Anda minati
 # Group Settings Text
-group_settings_text: "Klik di sini untuk mendapatkan pengaturan obrolan ini, serta pengaturan Anda."
+group_settings_text: "Klik di sini untuk mendapatkan pengaturan obrolan ini, serta pengaturan Anda"
 # Group Settings Button
 group_settings_button: "Pengaturan"
 
@@ -89,7 +89,7 @@ notes_button: "Catatan"
 source_button: "Kode sumber"
 help_button: "Mendapatkan bantuan"
 back_button: "Kembali"
-about_button: "Tentang Siesta Robot"
+about_button: "Tentang Killua Robot"
 inline_button: "Mencoba inline!​​"
 
 # MODULES
