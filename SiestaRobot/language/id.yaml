@@ -4,7 +4,7 @@ language: "Indonesia 🇮🇩"
 authors: "@tzypis"
 
 # languages
-curr_chat_lang: "Hai. Bahasa Anda saat ini adalah {}, pilih yang Anda inginkan dari tombol di bawah :)"
+curr_chat_lang: "Hai, Bahasa Anda saat ini adalah {}, pilih yang Anda inginkan dari tombol di bawah :)"
 set_chat_lang: "Bagus, menggunakan Bahasa {} mulai sekarang!"
 
 # PM Text
