@@ -47,7 +47,7 @@ async def bug(_, msg: Message):
     datetimes_fmt = "%d-%m-%Y"
     datetimes = datetime.utcnow().strftime(datetimes_fmt)
 
-    thumb = "https://telegra.ph/file/bd218d4af1c69c586ebb0.jpg"
+    thumb = "https://telegra.ph/file/e96eb51fbaf1123d7e27b.jpg"
     
     bug_report = f"""
 **#BUG : ** **@{owner_usn}**
@@ -62,7 +62,7 @@ async def bug(_, msg: Message):
 
     
     if msg.chat.type == "private":
-        await msg.reply_text("❎ <b>This command only works in groups.</b>")
+        await msg.reply_text("❎ <b>This command only works in groups</b>")
         return
 
     if user_id == owner_id:
