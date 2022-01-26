@@ -387,7 +387,7 @@ def siesta_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), callback_data="killua_support"),
-                        InlineKeyboardButton(text="Credits", callback_data="siesta_credit"),
+                        InlineKeyboardButton(text="Credits", callback_data="killua_credit"),
                     ],
                     [
                         InlineKeyboardButton(text=gs(chat.id, "source_button"), url="https://github.com/apisuserbot/SiestaRobot"),
