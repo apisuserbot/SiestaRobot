@@ -1,6 +1,6 @@
 {
-      "name": "Siesta Robot",
-      "description": "A Powerful Telegram group management bot with anime theme.",
+      "name": "Killua Robot",
+      "description": "A Powerful Telegram group management bot with anime theme",
       "keywords": [
          "telegram",
          "advance",
@@ -9,8 +9,8 @@
          "naorobot"
       ],
     
-   "logo":    "https://telegra.ph/file/566d0f3fb2107bd8ecb27.jpg",  
-   "repository": "https://github.com/shiinobu/https://github.com/shiinobu/SiestaRobot",
+   "logo":    "https://telegra.ph/file/86819c7878e760e687ed0.jpg",  
+   "repository": "https://github.com/apisuserbot/https://github.com/apisuserbot/SiestaRobot",
    "addons": [
           {
          "options": {
