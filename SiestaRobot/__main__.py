@@ -83,12 +83,12 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-SIESTA_IMG = "https://telegra.ph/file/6d3e3ef24f64fb6e35df0.jpg"
+SIESTA_IMG = "https://telegra.ph/file/86819c7878e760e687ed0.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @saint_foire \
+ You can support the project by contacting @tzypis \
  Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+ Those who cannot provide monetary support are welcome to help us develop the bot at"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -209,7 +209,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="siesta_"),
+                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="killua_"),
                         ],
                         [
                             InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
@@ -217,7 +217,7 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Siestaxbot?startgroup=new"),
+                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/TheKilluaRobot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -235,8 +235,8 @@ def start(update: Update, context: CallbackContext):
 
 
 def error_handler(update, context):
-    """Log the error and send a telegram message to notify the developer."""
-    # Log the error before we do anything else, so we can see it even if something breaks.
+    """Log the error and send a telegram message to notify the developer"""
+    # Log the error before we do anything else, so we can see it even if something breaks
     LOGGER.error(msg="Exception while handling an update:", exc_info=context.error)
 
     # traceback.format_exception returns the usual python message about an exception, but as a
@@ -382,23 +382,23 @@ def siesta_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Admins", callback_data="siesta_admin"),
-                        InlineKeyboardButton(text=gs(chat.id, "notes_button"), callback_data="siesta_notes"),
+                        InlineKeyboardButton(text="Admins", callback_data="killua_admin"),
+                        InlineKeyboardButton(text=gs(chat.id, "notes_button"), callback_data="killua_notes"),
                     ],
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), callback_data="siesta_support"),
+                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), callback_data="killua_support"),
                         InlineKeyboardButton(text="Credits", callback_data="siesta_credit"),
                     ],
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "source_button"), url="https://github.com/shiinobu/SiestaRobot"),
+                        InlineKeyboardButton(text=gs(chat.id, "source_button"), url="https://github.com/apisuserbot/SiestaRobot"),
                     ],
                     [
-                    InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_back"),
+                    InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="killua_back"),
                     ]
                 ]
             ),
         )
-    elif query.data == "siesta_back":
+    elif query.data == "killua_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -410,14 +410,14 @@ def siesta_about_callback(update, context):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="siesta_"),
+                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="killua_"),
                         ],
                         [
                             InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
                             InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Siestaxbot?startgroup=new"),
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/TheKilluaRobot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -426,7 +426,7 @@ def siesta_about_callback(update, context):
                 disable_web_page_preview=False,
         )
 
-    elif query.data == "siesta_admin":
+    elif query.data == "killua_admin":
         query.message.edit_text(
             text=gs(chat.id, "pm_about_admin_text"),
             parse_mode=ParseMode.MARKDOWN,
@@ -434,33 +434,33 @@ def siesta_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_"),
+                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="killua_"),
                     ]
                 ]
             ),
         )
 
-    elif query.data == "siesta_notes":
+    elif query.data == "killua_notes":
         query.message.edit_text(
             text=gs(chat.id, "pm_about_notes_text"),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_"),
+                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="killua_"),
                     ]
                 ]
             ),
         )
-    elif query.data == "siesta_support":
+    elif query.data == "killua_support":
         query.message.edit_text(
             text=gs(chat.id, "pm_about_support_text"),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), url="t.me/machinaxupport"),
-                        InlineKeyboardButton(text=gs(chat.id, "updates_channel_link_button"), url="https://t.me/machinaxupdate"),
+                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), url="t.me/ApisProject"),
+                        InlineKeyboardButton(text=gs(chat.id, "updates_channel_link_button"), url="https://t.me/JasaJokiIG"),
                     ],
                     [
                         InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_"),
@@ -470,21 +470,21 @@ def siesta_about_callback(update, context):
         )
 
 
-    elif query.data == "siesta_credit":
+    elif query.data == "killua_credit":
         query.message.edit_text(
             text=gs(chat.id, "pm_about_credit_text"),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Vain", url="https://github.com/shiinobu"),
+                        InlineKeyboardButton(text="Apis", url="https://github.com/apisuserbot"),
                     ],
                     [
                         InlineKeyboardButton(text="Paul Larsen", url="https://github.com/PaulSonOfLars"),
                         InlineKeyboardButton(text="TheHamkerCat", url="https://github.com/TheHamkerCat"),
                     ],
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_"),
+                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="killua_"),
                     ]
                 ]
             ),
@@ -496,8 +496,8 @@ def Source_about_callback(update, context):
     uptime = get_readable_time((time.time() - StartTime))
     if query.data == "source_":
         query.message.edit_text(
-            text="๏›› This advance command for Musicplayer."
-            "\n\n๏ Command for admins and member can you see with command bellow."
+            text="๏›› This advance command for Musicplayer"
+            "\n\n๏ Command for admins and member can you see with command bellow"
             "\n • `/mhelp` - checking help music module (only in pm bot)"
             "\n • `/msettings` - setting your authorization music module",
             parse_mode=ParseMode.MARKDOWN,
@@ -505,7 +505,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="siesta_"),
+                        InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="killua_"),
                     ]
                 ]
             ),
@@ -521,14 +521,14 @@ def Source_about_callback(update, context):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="siesta_"),
+                            InlineKeyboardButton(text=gs(chat.id, "about_button"), callback_data="killua_"),
                         ],
                         [
                             InlineKeyboardButton(text=gs(chat.id, "help_button"), callback_data="help_back"),
                             InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Siestaxbot?startgroup=new"),
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/TheKilluaRobot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -767,7 +767,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 945137470:
+        if OWNER_ID != 2081159749:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
@@ -787,7 +787,7 @@ def donate(update: Update, context: CallbackContext):
             )
         except Unauthorized:
             update.effective_message.reply_text(
-                "Contact me in PM first to get donation information."
+                "Contact me in PM first to get donation information"
             )
 
 
@@ -816,7 +816,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Yes Darling ❤️, i am activated!**""",
+                f"""**Yes , I Am Activated!**""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
